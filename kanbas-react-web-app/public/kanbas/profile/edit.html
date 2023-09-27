@@ -1,84 +1,124 @@
-<!DOCTYPE html>
-<html>
-    <table cellpadding="20px">
-        <td valign="top">
-            <ul>
-                <li><a href="profile/secondCol.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="/kanbas/firstAndSecondCol.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwuickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-            </ul>
-        </td>
-        <td>
-            <h1>Neha Ravuri</h1>
-            <label for="name">Name:*</label>
-            <input id="name" type="text"/>
-            <label for="pronouns">Pronouns:</label>
-            <select>
-                <option>None</option>
-            </select>
-            <br/><br/>
-            <label for="title">Title: </label>
-            <input type="text" id="title"/><br/><br/>
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            <h3>Biography</h3>
-            <p>Student, Computer Science, Software Concentration</p>
-            <textarea rows="4" cols="50">Student, Computer Science, Software Concentration</textarea>
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#">Youtube <i class="fa fa-external-link"></i>Links to an external site</a></li>
-            </ul>
-            <table width="100%">
-                <td valign="center">
-                    <b>Title</b><br/>
-                    <table>
-                        <td>
-                            <input type="text"/>
-                        </td>
-                        <td>
-                            <p>&rarr;</p>
-                        </td>
-                    </table>
-                </td>
-                <td valign="center">
-                    <b>URL</b><br/>
-                    <table>
-                        <td>
-                            <input type="text"/>
-                        </td>
-                        <td>
-                            <p><a href="#">Remove</a></p>
-                        </td>
-                    </table>
-                </td>
-            </table>
-            <button type="button">Add another link</button><br/>
-            <button type="button">Cancel</button>
-            <button type="button">Save Profile</button><br/>
-            <button type="button">Edit Profile</button>
-            <button type="button">Cancel Editing</button>
-            </td>
-    </table>
-    
-</html>
+<head>
+  <link
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="../../vendors/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../index.css" rel="stylesheet" />
+</head>
+<ul class="left-col">
+  <li class="active">
+    <i class="fa-solid fa-user fa-xl" style="color: #818283"></i>
+    <br />
+    <a class="text-danger" href="profile/secondCol.html">Account</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-gauge fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Dashboard</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-book fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="firstAndSecondCol.html">Courses</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-calendar-days fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Calendar</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-inbox fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Inbox</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-clock fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">History</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-microphone-lines fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Studio</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-right-from-bracket fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Commons</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-circle-question fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#" class="link-light">Help</a>
+  </li>
+</ul>
+<div class="right-side">
+  <p>Neha Ravuri's profile</p>
+  <hr />
+  <div class="right-container">
+    <ul class="second-col">
+      <li><a class="text-danger" href="#">Notifications</a></li>
+      <li>
+        <a class="profile" href="index.html">
+          <div class="verticalLine"></div>
+          Profile</a
+        >
+      </li>
+      <li><a class="text-danger" href="#">Files</a></li>
+      <li><a class="text-danger" href="#">Settings</a></li>
+      <li><a class="text-danger" href="#">ePortfolios</a></li>
+      <li><a class="text-danger" href="#">Shared Content</a></li>
+      <li><a class="text-danger" href="#">The Hub</a></li>
+      <li><a class="text-danger" href="#">Qwuickly Course Tools</a></li>
+      <li><a class="text-danger" href="#">Global Announcements</a></li>
+    </ul>
+    <div class="profile">
+      <h1>Neha Ravuri</h1>
+      <label for="name">Name:*</label>
+      <input id="name" type="text" />
+      <label for="pronouns">Pronouns:</label>
+      <select>
+        <option>None</option>
+      </select>
+      <br /><br />
+      <label for="title">Title: </label>
+      <input type="text" id="title" /><br /><br />
+      <h3>Contact</h3>
+      <p>
+        No registered services, you can add some on the
+        <a href="#">settings</a> page.
+      </p>
+      <h3>Contact</h3>
+      <p>
+        No registered services, you can add some on the
+        <a href="#">settings</a> page.
+      </p>
+      <h3>Biography</h3>
+      <p>Student, Computer Science, Software Concentration</p>
+      <textarea rows="4" cols="50">
+    Student, Computer Science, Software Concentration</textarea
+      >
+      <h3>Links</h3>
+      <ul>
+        <li>
+          <a href="#"
+            >Youtube <i class="fa fa-external-link"></i>Links to an external
+            site</a
+          >
+        </li>
+      </ul>
+      <b>Title</b><br />
+      <input type="text" />
+      <p>&rarr;</p>
+      <b>URL</b><br />
+      <input type="text" />
+      <p><a href="#">Remove</a></p>
+      <button type="button">Add another link</button><br />
+      <button type="button">Cancel</button>
+      <button type="button">Save Profile</button><br />
+      <button type="button">Edit Profile</button>
+      <button type="button">Cancel Editing</button>
+    </div>
+  </div>
+</div>

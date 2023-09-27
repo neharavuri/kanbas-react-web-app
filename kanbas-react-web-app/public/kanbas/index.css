@@ -8,7 +8,6 @@
     float:left;
 }
 .left-col li {
-    height: 7%;
     padding:10px;
     margin-top:10px;
     margin-bottom:10px;
@@ -19,10 +18,56 @@
 .left-col .active {
     background-color: white;
 }
-.columns {
-    display: inline-block;
+.second-col {
+    width: 190px;
+    float:left;
+    padding-top: 15px;    
 }
 
-.second-col {
-    float:right;
+.second-col .header {
+    padding-left: 40px;
 }
+
+.header {
+    padding: 10px;
+}
+
+.second-col li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.second-col .profile {
+    color:black;
+}
+
+.right-side {
+    float:inline-end;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.right-side p {
+    padding-top: 20px;
+}
+
+.right-side .info {
+    display:flex;
+    flex-direction:column;
+}
+
+.right-side .info .profile-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-side .info .profile-icon button {
+    margin-left: 40%;
+    height:100%;
+}
+
+.verticalLine{
+    height:30px;
+    width:20px;
+    border-left:3px solid black;
+  }
