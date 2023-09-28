@@ -22,6 +22,7 @@
     width: 190px;
     float:left;
     padding-top: 15px;    
+    height: 200%;
 }
 
 .second-col .header {
@@ -42,13 +43,18 @@
 }
 
 .right-side {
-    float:inline-end;
-    width: 100%;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
 .right-side p {
     padding-top: 20px;
+}
+
+.right-container {
+    display:flex;
+    flex-direction: row;
 }
 
 .right-side .info {
@@ -71,3 +77,7 @@
     width:20px;
     border-left:3px solid black;
   }
+
+.p-2 {
+    margin: 5px;
+}  
