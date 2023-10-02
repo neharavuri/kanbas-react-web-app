@@ -142,3 +142,8 @@
 .table {
     width: 80%;
 }
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+}
