@@ -1,105 +1,217 @@
-<table>
-    <td valign="top">
-        <ul>
-            <li><a href="profile/secondCol.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="firstAndSecondCol.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
-    </td>
-    <td valign="top">
-        <ul>
-            <li><a href=home.html>Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </td>
-    <td>
-        <select>
-            <option>SpeedGrader</option>
-        </select>
-        <hr>
-        <h2>Assignment Name</h2>
-        <input type="text"/><br/><br/>
-        <textarea rows="4" cols="50">This is the assignment description.</textarea>
+<head>
+  <link
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="../../vendors/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="index.css" rel="stylesheet" />
+</head>
+<ul class="left-col">
+  <li>
+    <i class="fa-solid fa-user fa-xl" style="color: #ffffff"></i>
+    <br />
+    <a class="text-white" href="profile/secondCol.html">Account</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-gauge fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="dashboard.html">Dashboard</a>
+  </li>
+  <li class="active">
+    <i class="fa-solid fa-book fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-danger" href="firstAndSecondCol.html">Courses</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-calendar-days fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Calendar</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-inbox fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Inbox</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-clock fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">History</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-microphone-lines fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Studio</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-right-from-bracket fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Commons</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-circle-question fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#" class="link-light">Help</a>
+  </li>
+</ul>
+<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#">CS 3700 Spring 2023 Section 01</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+  </ol>
+</nav>
+<div class="second-col">
+  <ul>
+    <li><a class="text-danger" href="home.html">Home</a></li>
+    <li><a class="text-danger" href="index.html">Modules</a></li>
+    <li><a class="text-danger" href="#">Piazza</a></li>
+    <li><a class="text-danger" href="#">Zoom Meetings</a></li>
+    <li><a class="text-danger" href="assignments.html">Assignments</a></li>
+    <li><a class="text-danger" href="#">Quizzes</a></li>
+    <li><a class="text-danger" href="grades.html">Grades</a></li>
+    <li><a class="text-danger" href="#">People</a></li>
+    <li><a class="text-danger" href="#">Panopto Video</a></li>
+    <li><a class="text-danger" href="#">Discussions</a></li>
+    <li><a class="text-danger" href="#">Announcements</a></li>
+    <li><a class="text-danger" href="#">Pages</a></li>
+    <li><a class="text-danger" href="#">Files</a></li>
+    <li><a class="text-danger" href="#">Rubrics</a></li>
+    <li><a class="text-danger" href="#">Outcomes</a></li>
+    <li><a class="text-danger" href="#">Collaborations</a></li>
+    <li><a class="text-danger" href="#">Syllabus</a></li>
+    <li>
+      <a class="text-danger" href="#">Progress Reports (EAB Navigate) </a>
+    </li>
+    <li><a class="text-danger" href="#">Settings</a></li>
+  </ul>
+</div>
+<select>
+  <option>SpeedGrader</option>
+</select>
+<hr />
+<div class="thirdCol">
+  <p>Assignment Name</p>
+  <input class="form-control" />
+  <br />
+  <textarea class="form-control" rows="3"></textarea>
+  <br />
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p class="px-4">Points</p>
+        <br />
+        <p>Assignment Group</p>
+        <br />
+        <p>Display Grade as</p>
+        <br />
+      </div>
+      <div class="col-sm">
+        <input id="points" class="form-control" />
+        <br />
+        <input id="choose-assignment" class="form-control" />
+        <br />
+        <input
+          class="form-control"
+          list="datalistOptions"
+          id="exampleDataList"
+        />
+        <datalist id="datalistOptions">
+          <option value="Percentage"></option>
+          <option value="Letter"></option>
+        </datalist>
+      </div>
+    </div>
+  </div>
+  <input
+  class="form-check-input"
+  type="checkbox"
+  value=""
+  id="flexCheckChecked"
+  checked
+/>
+<label class="form-check-label" for="flexCheckChecked">
+  Do not count this assignment toward the final grade
+</label>
+<br/>
+<br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p>Submission Type</p>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <p>Assign</p>
+      </div>
+      <div class="col-sm">
+        <div class="submission-right">
+          <input
+            class="form-control"
+            list="datalistOptions"
+            id="exampleDataList"
+            placeholder="Type to search..."
+          />
+          <datalist id="datalistOptions">
+            <option value="Online"></option>
+            <option value="In Person"></option>
+          </datalist>
+          <br />
+          <b><label>Online Entry Options</label></b>
+          <br />
+          <input type="checkbox" value="TEXT" id="text-entry" />
+          <label for="text-entry">Text Entry</label><br />
+          <input type="checkbox" value="WEBSITE" id="website-url" />
+          <label for="website-url">Website URL</label><br />
+          <input type="checkbox" value="MEDIA" id="media-recordings" />
+          <label for="media-recording">Media Recordings</label><br />
+          <input
+            type="checkbox"
+            value="STUDENT-ANNOTATIONS"
+            id="student-annotations"
+          />
+          <label for="student-annotations">Student Annotation</label><br />
+          <input type="checkbox" value="FILE" id="file-uploads" />
+          <label for="file-uploads">File Uploads</label>
+        </div>
         <br/>
+        <div class="submission-right">
+          <b><p>Assign To</p></b>
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <br />
+          <br />
+          <label for="due">Due</label><br />
+          <input type="date" id="due-date" value="2021-01-01" /><br /><br />
+          <label for="available">Available from</label><br />
+          <input type="date" id="available-from" value="2021-01-01" /><br /><br />
+          <label for="until">Until</label><br />
+          <input type="date" id="until" value="2021-01-01" /><br /><br />
+        </div>
         <br/>
-        <label for="points">Points</label>
-        <br/>
-        <input id = "points" type="text"/>
-        <br/><br/>
-        <label for="choose-assignment">Assignment Group</label><br/>
-        <select id="choose-assignment">
-            <option>ASSIGNMENTS</option>
-        </select>
-        <br/><br/>
-        <label>Display Grade as</label><br/>
-        <select>
-            <option>Percentage</option>
-        </select>
-        <br/><br/>
-        <label>Submission Type</label><br/>
-        <select>
-            <option>Online</option>
-        </select><br/><br/>
-        <label>Online Entry Options</label><br/>
-        <input type="checkbox" value="TEXT" id="text-entry"/>
-        <label for="text-entry">Text Entry</label><br/>
-        <input type="checkbox" value="WEBSITE" id="website-url"/>
-        <label for="website-url">Website URL</label><br/>
-        <input type="checkbox" value="MEDIA" id="media-recordings"/>
-        <label for="media-recording">Media Recordings</label><br/>
-        <input type="checkbox" value="STUDENT-ANNOTATIONS" id="student-annotations"/>
-        <label for="student-annotations">Student Annotation</label><br/>
-        <input type="checkbox" value="FILE" id="file-uploads"/>
-        <label for="file-uploads">File Uploads</label><br/><br/>
-        <label>Submission Attempts</label><br/>
-        <select>
-            <option>Unlimited</option>
-        </select>
-        <br/><br/>
-        <label>Plagiarism Review</label><br/>
-        <select>
-            <option>None</option>
-        </select>
-        <br/><br/>
-        <label>Group Assignment</label><br/>
-        <input type="checkbox" value="GROUP" id="group-assignment"/>
-        <label for="group-assignment">This is a group assignment</label><br/><br/>
-        <label>Peer Reviews</label><br/>
-        <input type="checkbox" value="PEER" id="peer-review"/>
-        <label for="peer-review">Require Peer Reviews</label>
-        <br/><br/>
-        <label>Assign</label><br/>
-        <label>Assign to</label><br/>
-        <input type="text"/><br/><br/>
-        <label for="due">Due</label><br/>
-        <input type="date" id="due-date" value="2021-01-01"/><br/><br/>
-        <label for="available">Available from</label><br/>
-        <input type="date" id="available-from" value="2021-01-01"/><br/><br/>
-        <label for="until">Until</label><br/>
-        <input type="date" id="until" value="2021-01-01"/><br/><br/>
-        <button type="button">Cancel</button>
-        <button type="button">Save</button>
-    </td>
-</table>
+      </div>
+    </div>
+  </div>
+  <div class="thirdCol-second">
+    <button type="button" class="btn btn-secondary" style="width: 100%">
+      + Add
+    </button>
+    <br />
+    <hr/>
+    <br />
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="flexCheckChecked"
+      checked
+    />
+    <label class="form-check-label" for="flexCheckChecked">
+      Notify users that this content has changed
+    </label>
+    <button type="button" class="float-right btn btn-secondary">Cancel</button>
+    <button type="button" class="float-right btn btn-danger">Save</button>
+  </div>
+</div>

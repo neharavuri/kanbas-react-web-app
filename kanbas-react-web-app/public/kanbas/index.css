@@ -22,7 +22,7 @@
     width: 190px;
     float:left;
     padding-top: 15px;    
-    height: 200%;
+    height: 110%;
 }
 
 .second-col .header {
@@ -79,5 +79,66 @@
   }
 
 .p-2 {
-    margin: 5px;
+    margin: 10px;
 }  
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-section ol {
+    font-weight: 600;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+}
+
+.status button {
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+.btn-secondary {
+    background-color: rgb(233, 232, 230);
+    outline: white;
+    color: black;
+}
+
+.outer {
+    display:flex;
+    flex-direction: row;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch:semi-condensed;
+
+}
+
+.thirdCol {
+    float: left;
+    width: 60%;
+}
+
+.thirdCol-second  {
+    text-align: center;
+}
+
+.submission-right {
+    outline: 2px solid black;
+    padding: 10px;
+    text-align:left;
+}
+
+.table {
+    width: 80%;
+}

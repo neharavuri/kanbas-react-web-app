@@ -1,120 +1,142 @@
-<table>
-    <td valign="top">
-        <ul>
-            <li><a href="profile/secondCol.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="firstAndSecondCol.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
-    </td>
-    <td valign="top">
-        <ul>
-            <li><a href=home.html>Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </td>
-    <td>
-        <select>
-            <option value="VAL1">Gradebook</option>
-            <option value="VAL2">Option 2</option>
-         </select>
-        <button type="button">Import</button>
-        <select>
-            <option value="VAL1">Export</option>
-            <option value="VAL2">Option 2</option>
-        </select>
-        <button type="button">Configure</button>
-        <h1 style="font-size: 25">Student Names</h1>
-        <input id="search-students" placeholder="Search Students"/><br/>
-        <h1 style="font-size: 25">Assignment Names</h1>
-        <input id="search-students" placeholder="Search Assignments"/><br/>
-        <br/><button type="button">Apply Filters</button>
-        <br><table border="1" width="110%">
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 SETUP<br>Out of 100</th>
-                    <th>A2 HTML<br>Out of 100</th>
-                    <th>A3 CSS<br>Out of 100</th>
-                    <th>A4 BOOTSTRAP<br>Out of 100</th>
-                    <th>A5 JAVASCRIPT<br>Out of 100</th>
-                    <th>A6 REACT<br>Out of 100</th>
-                    <th>A7 REDUX<br>Out of 100</th>
-                    <th>A8 NODE<br>Out of 100</th>
-                    <th>A9 MONGO<br>Out of 100</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Alice Wonderland</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>89</td>
-                    <td>99</td>
-                    <td>5</td>
-                    <td>87</td>
-                    <td>88</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>45</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>Neha Ravuri</td>
-                    <td>98</td>
-                    <td>99</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>100</td>
-                    <td>99</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>95</td>
-                    <td>94</td>
-                    <td><input type="text" size="3"/></td>
-                </tr>
-                <tr>
-                    <td>Bob Jones</td>
-                    <td>88</td>
-                    <td>89</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>58</td>
-                    <td>88</td>
-                    <td>68</td>
-                    <td>48</td>
-                    <td>49</td>
-                    <td><input type="text" size="3"/></td>
-                </tr>
-                <tr>
-                    <td>Grace Wonderland</td>
-                    <td>58</td>
-                    <td>39</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>53</td>
-                    <td>87</td>
-                    <td>28</td>
-                    <td>18</td>
-                    <td><input type="text" size="3"/></td>
-                    <td>80</td>
-                </tr>
-            </tbody>
-        </table>
-    </td>
+<head>
+  <link
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="../../vendors/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="index.css" rel="stylesheet" />
+</head>
+<ul class="left-col">
+  <li>
+    <i class="fa-solid fa-user fa-xl" style="color: #ffffff"></i>
+    <br />
+    <a class="text-white" href="profile/secondCol.html">Account</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-gauge fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="dashboard.html">Dashboard</a>
+  </li>
+  <li class="active">
+    <i class="fa-solid fa-book fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-danger" href="firstAndSecondCol.html">Courses</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-calendar-days fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Calendar</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-inbox fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Inbox</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-clock fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">History</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-microphone-lines fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Studio</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-right-from-bracket fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#">Commons</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-circle-question fa-xl" style="color: #b81414"></i>
+    <br />
+    <a class="text-white" href="#" class="link-light">Help</a>
+  </li>
+</ul>
+<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#">CS 3700 Spring 2023 Section 01</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+  </ol>
+</nav>
+<div class="second-col">
+  <ul>
+    <li><a class="text-danger" href="home.html">Home</a></li>
+    <li><a class="text-danger" href="index.html">Modules</a></li>
+    <li><a class="text-danger" href="#">Piazza</a></li>
+    <li><a class="text-danger" href="#">Zoom Meetings</a></li>
+    <li><a class="text-danger" href="assignments.html">Assignments</a></li>
+    <li><a class="text-danger" href="#">Quizzes</a></li>
+    <li><a class="text-danger" href="grades.html">Grades</a></li>
+    <li><a class="text-danger" href="#">People</a></li>
+    <li><a class="text-danger" href="#">Panopto Video</a></li>
+    <li><a class="text-danger" href="#">Discussions</a></li>
+    <li><a class="text-danger" href="#">Announcements</a></li>
+    <li><a class="text-danger" href="#">Pages</a></li>
+    <li><a class="text-danger" href="#">Files</a></li>
+    <li><a class="text-danger" href="#">Rubrics</a></li>
+    <li><a class="text-danger" href="#">Outcomes</a></li>
+    <li><a class="text-danger" href="#">Collaborations</a></li>
+    <li><a class="text-danger" href="#">Syllabus</a></li>
+    <li>
+      <a class="text-danger" href="#">Progress Reports (EAB Navigate) </a>
+    </li>
+    <li><a class="text-danger" href="#">Settings</a></li>
+  </ul>
+</div>
+<div class="float-right">
+  <button type="button" class="btn btn-secondary">Import</button>
+  <button type="button" class="btn btn-secondary">Export</button>
+</div>
+<br /><br />
+<b><p>Student Names</p></b>
+<input id="search-students" placeholder="Search Students" />
+<b><p>Assignment Names</p></b>
+<input id="search-students" placeholder="Search Assignments" /><br /><br/>
+<button type="button" class="btn btn-secondary">Apply Filters</button><br />
+<br/>
+<table class="table">
+    <thead>
+        <tr style="background-color: rgb(235, 232, 232);">
+            <th scope="col">Student Name</th>
+            <th scope="col">A1 SETUP<br/>Out of 100</th>
+            <th scope="col">A2 HTML<br/>Out of 100</th>
+            <th scope="col">A3 CSS<br/>Out of 100</th>
+            <th scope="col">A4 BOOTSTRAP<br/>Out of 100</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Neha Ravuri</th>
+            <td>100</td>
+            <td>99</td>
+            <td>99</td>
+            <td>97</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr style="background-color: rgb(235, 232, 232);">
+            <th scope="row">Risha Ranjan</th>
+            <td>99</td>
+            <td>93</td>
+            <td>96</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <th scope="row">Ella Hughes</th>
+            <td>96</td>
+            <td>99</td>
+            <td>100</td>
+            <td>99</td>
+        </tr>
+        <tr style="background-color: rgb(235, 232, 232);">
+            <th scope="row">Abby Ryan</th>
+            <td>99</td>
+            <td>98</td>
+            <td>100</td>
+            <td>94</td>
+        </tr>
+    </tbody>
 </table>
