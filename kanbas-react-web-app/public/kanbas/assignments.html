@@ -3,7 +3,7 @@
     href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
     rel="stylesheet"
   />
-  <link href="../../vendors/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../vendors/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="index.css" rel="stylesheet" />
 </head>
 <ul class="left-col">
@@ -67,9 +67,14 @@
     <li><a class="text-danger" href="index.html">Modules</a></li>
     <li><a class="text-danger" href="#">Piazza</a></li>
     <li><a class="text-danger" href="#">Zoom Meetings</a></li>
-    <li><a class="text-danger" href="assignments.html">Assignments</a></li>
+    <li>
+      <a class="active-link" href="assignments.html"
+        ><div class="vr"></div>
+        Assignments</a
+      >
+    </li>
     <li><a class="text-danger" href="#">Quizzes</a></li>
-    <li><a class="text-danger" href="#">Grades</a></li>
+    <li><a class="text-danger" href="grades.html">Grades</a></li>
     <li><a class="text-danger" href="#">People</a></li>
     <li><a class="text-danger" href="#">Panopto Video</a></li>
     <li><a class="text-danger" href="#">Discussions</a></li>
@@ -86,284 +91,396 @@
     <li><a class="text-danger" href="#">Settings</a></li>
   </ul>
 </div>
-<div class="thirdCol" style="width: 90%">
-  <input
-    type="search"
-    class="w-25 form-control"
-    placeholder="Search for Assignment"
-  />
-  <button type="button" class="my-1 btn btn-secondary btn-outline-light">
-    Group
-  </button>
-  <button type="button" class="my-1 btn btn-secondary btn-outline-light">
-    Assignment
-  </button>
-  <button type="button" class="my-1 btn btn-secondary btn-outline-light">
-    <i class="fa-solid fa-ellipsis-vertical" style="color: #121212"></i>
-  </button>
+<div class="thirdCol float-left" style="width: 60%">
+  <div class="buttons">
+    <input
+      type="search"
+      class="w-60 form-control"
+      placeholder="Search for Assignment"
+    />
+    <button
+      type="button"
+      class="float-right my-1 btn btn-secondary btn-outline-light"
+    >
+      +Group
+    </button>
+    <button type="button" class="float-right my-1 btn btn-danger">
+      +Assignment
+    </button>
+    <button
+      type="button"
+      class="float-right my-1 btn btn-secondary btn-outline-light"
+    >
+      <i class="fa-solid fa-ellipsis-vertical" style="color: #121212"></i>
+    </button>
+  </div>
+
+  <br />
   <hr />
-    <ul class="list-group">
-      <li class="list-group-item text">Assignments</li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>A1 - SETUP</b>
-                <p>Week 0 - SETUP- Week starting on Monday, September 5th<br/>
-                <b>Due</b> Sep 18, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+  <ul class="border-left border-success list-group">
+    <li class="list-group-item text">Assignments</li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>A1 - SETUP</b>
+              <p>
+                Week 0 - SETUP- Week starting on Monday, September 5th<br />
+                <b>Due</b> Sep 18, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>A2 - HTML</b>
-                <p>Week 1 - HTML - Week starting on Monday, September 13<br/>
-                <b>Due</b> Sep 25, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>A2 - HTML</b>
+              <p>
+                Week 1 - HTML - Week starting on Monday, September 13<br />
+                <b>Due</b> Sep 25, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>A3 - CSS</b>
-                <p>Week 2 - CSS - Week starting on Monday, September 20<br/>
-                <b>Due</b> Oct 2, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>A3 - CSS</b>
+              <p>
+                Week 2 - CSS - Week starting on Monday, September 20<br />
+                <b>Due</b> Oct 2, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>A4 - Bootstrap</b>
-                <p>Week 4 - Bootstrap - Week starting on Monday, September 26<br/>
-                <b>Due</b> Oct 9, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>A4 - Bootstrap</b>
+              <p>
+                Week 4 - Bootstrap - Week starting on Monday, September 26<br />
+                <b>Due</b> Oct 9, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>A5 - Javascript</b>
-                <p>Week 5 - Javascript - Week starting on Monday, September 26<br/>
-                <b>Due</b> Oct 16, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>A5 - Javascript</b>
+              <p>
+                Week 5 - Javascript - Week starting on Monday, September 26<br />
+                <b>Due</b> Oct 16, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>A6 - React</b>
-                <p>Week 5 - Javascript - Week starting on Monday, September 26<br/>
-                <b>Due</b> Oct 16, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>A6 - React</b>
+              <p>
+                Week 5 - Javascript - Week starting on Monday, September 26<br />
+                <b>Due</b> Oct 16, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-    </ul>
-    <br />
-    <ul class="list-group">
-      <li class="list-group-item">Quizzes</li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>Q1: HTML</b>
-                <p>Week 1 - HTML - Week starting on Monday, September 20<br/>
-                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+  </ul>
+  <br />
+  <ul class="border-left border-success list-group">
+    <li class="list-group-item">Quizzes</li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Q1: HTML</b>
+              <p>
+                Week 1 - HTML - Week starting on Monday, September 20<br />
+                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>Q2: CSS</b>
-                <p>Week 1 - HTML - Week starting on Monday, September 20<br/>
-                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Q2: CSS</b>
+              <p>
+                Week 1 - HTML - Week starting on Monday, September 20<br />
+                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>Q3: JS</b>
-                <p>Week 1 - HTML - Week starting on Monday, September 20<br/>
-                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Q3: JS</b>
+              <p>
+                Week 1 - HTML - Week starting on Monday, September 20<br />
+                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>Q4: NODE</b>
-                <p>Week 1 - HTML - Week starting on Monday, September 20<br/>
-                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Q4: NODE</b>
+              <p>
+                Week 1 - HTML - Week starting on Monday, September 20<br />
+                <b>Due</b> September 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-    </ul>
-    <br />
-    <ul class="list-group">
-      <li class="list-group-item">Exams</li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>Midterm</b>
-                <p>Week 8<br/>
-                <b>Due</b> October 20, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+  </ul>
+  <br />
+  <ul class="border-left border-success list-group">
+    <li class="list-group-item">Exams</li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Midterm</b>
+              <p>
+                Week 8<br />
+                <b>Due</b> October 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-      <li class="list-group-item">
-        <div class="container">
-          <div class="row text">
-            <div>
-              <i
-                class="fa-regular fa-file-lines fa-lg py-4"
-                style="color: #519b31"
-              ></i>
-            </div>
-            <div class="col">
-              <a href="edit.html" class="text-dark">
-                <b>Final</b>
-                <p>Week 12<br/>
-                <b>Due</b> November 20, 2022 at 11:59 pm | 100 pts</p>
-              </a>
-            </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Final</b>
+              <p>
+                Week 12<br />
+                <b>Due</b> November 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
           </div>
         </div>
-      </li>
-    </ul>
-    <br />
-    <ul>
-      <ul class="list-group">
-        <li class="list-group-item">Projects</li>
-        <li class="list-group-item">
-            <div class="container">
-              <div class="row text">
-                <div>
-                  <i
-                    class="fa-regular fa-file-lines fa-lg py-4"
-                    style="color: #519b31"
-                  ></i>
-                </div>
-                <div class="col">
-                  <a href="edit.html" class="text-dark">
-                    <b>Final Project</b>
-                    <p>Week 12<br/>
-                    <b>Due</b> November 20, 2022 at 11:59 pm | 100 pts</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-      </ul>
-    </ul>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+  </ul>
+  <br />
+  <ul class="border-left border-success list-group">
+    <li class="list-group-item">Projects</li>
+    <li class="list-group-item">
+      <div class="container">
+        <div class="row text">
+          <div>
+            <i
+              class="pr-3 fa-solid fa-grip-vertical"
+              style="color: #050505"
+            ></i>
+            <i
+              class="fa-regular fa-file-lines fa-lg py-4"
+              style="color: #519b31"
+            ></i>
+          </div>
+          <div class="col">
+            <a href="edit.html" class="text-dark">
+              <b>Final Project</b>
+              <p>
+                Week 12<br />
+                <b>Due</b> November 20, 2022 at 11:59 pm | 100 pts
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <i class="py-5 fa-xl fa-solid fa-circle-check ml-auto" style="color: #56c863"></i>
+      <i class="pl-3 py-5 fa-xl fa-solid fa-ellipsis-vertical" style="color: #0d0d0d"></i>
+    </li>
+  </ul>
 </div>

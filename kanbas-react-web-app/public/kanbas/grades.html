@@ -69,7 +69,7 @@
     <li><a class="text-danger" href="#">Zoom Meetings</a></li>
     <li><a class="text-danger" href="assignments.html">Assignments</a></li>
     <li><a class="text-danger" href="#">Quizzes</a></li>
-    <li><a class="text-danger" href="grades.html">Grades</a></li>
+    <li><a class="active-link" href="grades.html"><div class="vr"></div>Grades</a></li>
     <li><a class="text-danger" href="#">People</a></li>
     <li><a class="text-danger" href="#">Panopto Video</a></li>
     <li><a class="text-danger" href="#">Discussions</a></li>
@@ -86,57 +86,74 @@
     <li><a class="text-danger" href="#">Settings</a></li>
   </ul>
 </div>
+<hr/>
 <div class="float-right">
-  <button type="button" class="btn btn-secondary">Import</button>
-  <button type="button" class="btn btn-secondary">Export</button>
+  <button type="button" class="btn btn-secondary"><i class="pr-2 fa-solid fa-file-import"></i>Import</button>
+  <button type="button" class="btn btn-secondary"><i class="pr-2 fa-solid fa-file-export"></i>Export</button>
+  <button type="button" class="mr-5 btn btn-secondary"><i class="fa-solid fa-gear" style="color: #050505;"></i></button>
 </div>
 <br /><br />
-<b><p>Student Names</p></b>
-<input id="search-students" placeholder="Search Students" />
-<b><p>Assignment Names</p></b>
-<input id="search-students" placeholder="Search Assignments" /><br /><br/>
-<button type="button" class="btn btn-secondary">Apply Filters</button><br />
-<br/>
-<table class="table">
-    <thead>
-        <tr style="background-color: rgb(235, 232, 232);">
-            <th scope="col">Student Name</th>
-            <th scope="col">A1 SETUP<br/>Out of 100</th>
-            <th scope="col">A2 HTML<br/>Out of 100</th>
-            <th scope="col">A3 CSS<br/>Out of 100</th>
-            <th scope="col">A4 BOOTSTRAP<br/>Out of 100</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Neha Ravuri</th>
-            <td>100</td>
-            <td>99</td>
-            <td>99</td>
-            <td>97</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr style="background-color: rgb(235, 232, 232);">
-            <th scope="row">Risha Ranjan</th>
-            <td>99</td>
-            <td>93</td>
-            <td>96</td>
-            <td>97</td>
-        </tr>
-        <tr>
-            <th scope="row">Ella Hughes</th>
-            <td>96</td>
-            <td>99</td>
-            <td>100</td>
-            <td>99</td>
-        </tr>
-        <tr style="background-color: rgb(235, 232, 232);">
-            <th scope="row">Abby Ryan</th>
-            <td>99</td>
-            <td>98</td>
-            <td>100</td>
-            <td>94</td>
-        </tr>
-    </tbody>
+<div class="container">
+  <div class="row">
+    <div class="col-sm " style="text-align:left;">
+      <b><p>Student Names</p></b>
+    </div>
+    <div class="col-sm">
+      <b><p>Assignment Names</p></b>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <input type="text" class="form-control" placeholder="Search Students" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="col-sm">
+      <input type="text" class="form-control" placeholder="Search Assignments" aria-label="Username" aria-describedby="basic-addon1">
+      <br />
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-secondary"><i class="fa-solid fa-filter" style="color: #171717;"></i>Apply Filters</button><br />
+<br />
+<table class="float-left table" style="width:50%;">
+  <thead>
+    <tr style="background-color: rgb(235, 232, 232)">
+      <th scope="col">Student Name</th>
+      <th scope="col">A1 SETUP<br />Out of 100</th>
+      <th scope="col">A2 HTML<br />Out of 100</th>
+      <th scope="col">A3 CSS<br />Out of 100</th>
+      <th scope="col">A4 BOOTSTRAP<br />Out of 100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-danger" scope="row">Neha Ravuri</th>
+      <td>100</td>
+      <td>99</td>
+      <td>99</td>
+      <td>97</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr style="background-color: rgb(235, 232, 232)">
+      <th class="text-danger" scope="row">Risha Ranjan</th>
+      <td>99</td>
+      <td>93</td>
+      <td>96</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <th class="text-danger" scope="row">Ella Hughes</th>
+      <td>96</td>
+      <td>99</td>
+      <td>100</td>
+      <td>99</td>
+    </tr>
+    <tr style="background-color: rgb(235, 232, 232)">
+      <th class="text-danger" scope="row">Abby Ryan</th>
+      <td>99</td>
+      <td>98</td>
+      <td>100</td>
+      <td>94</td>
+    </tr>
+  </tbody>
 </table>

@@ -142,11 +142,22 @@
 }
 
 .vr {
+    position:relative;
+    top:5px;
     border-left: 3px solid black;
     height: 25px;
     margin-left: -5px;
     display: inline-flex;
+    padding-right: 3px;
   }
+
+  .vr-green {
+    border-left: 3px solid #519b31;
+    margin-left: -20px;
+    display: inline-flex;
+    margin-top:-12px;
+  }
+
 
 .active-link {
     position:relative; 
@@ -270,5 +281,12 @@
     float:left;
     position:relative;
     left:-13%;
+}
+.assignments li {
+    border-right: green;
+}
+
+.border-left {
+    border-width: 5px !important ;
 }
 
