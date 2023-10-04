@@ -19,10 +19,11 @@
     background-color: white;
 }
 .second-col {
-    width: 190px;
+    width: 200px;
     float:left;
     padding-top: 15px;    
     height: 110%;
+    padding-right:10px;
 }
 
 .second-col .header {
@@ -82,19 +83,11 @@
     margin: 10px;
 }  
 
-.right-section {
-    display: flex;
-    flex-direction: row;
-}
 
 .right-section ol {
     font-weight: 600;
 }
 
-.status {
-    display: flex;
-    flex-direction: column;
-}
 
 .status button {
     width: 70%;
@@ -146,4 +139,74 @@
 .profile-header {
     display: flex;
     flex-direction: row;
+}
+
+.vr {
+    border-left: 3px solid black;
+    height: 25px;
+    margin-left: -5px;
+    display: inline-flex;
+  }
+
+.active-link {
+    position:relative; 
+    top: -5px;
+    color:black;
+}
+
+.info-section {
+    width: 40%;
+}
+
+
+.col-2 {
+    width: 10%;
+}
+
+.status {
+    width: 30%;
+}
+
+@media only screen and (max-width:1400px) {
+    .status {
+        display: none;
+        width: 0%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .second-col {
+        display: none;
+    }
+    .left-col {
+        display:none;
+    }
+    .modules{
+        position:absolute;
+        width: 100%;
+    }
+    .modules li{
+        position:relative;
+        left: 20%;
+        width:500px;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-grip-vertical {
+    position:relative;
+    right:2%;
+}
+
+.indent {
+    position:relative;
+    right:6%;
+}
+.fa-caret-down {
+    position:relative;
+    right:1%;
 }
