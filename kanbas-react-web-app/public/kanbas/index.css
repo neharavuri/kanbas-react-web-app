@@ -1,23 +1,4 @@
-.left-col {
-    background-color: black;
-    width: 95px;
-    padding:0;
-    height:100%;
-    text-align: center;
-    color: white;
-    float:left;
-}
-.left-col li {
-    padding:10px;
-    margin-top:10px;
-    margin-bottom:10px;
-    list-style-type: none;
-    text-align:center;
-}
 
-.left-col .active {
-    background-color: white;
-}
 .second-col {
     width: 200px;
     float:left;
@@ -239,6 +220,10 @@
 .fa-grip-vertical {
     position:relative;
     right:2%;
+}
+
+.kanbas-icon{
+    text-align: center;
 }
 
 .indent {

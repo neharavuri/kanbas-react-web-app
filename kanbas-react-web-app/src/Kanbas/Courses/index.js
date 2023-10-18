@@ -1,6 +1,7 @@
 import db from "../../Kanbas/Database";
 import { useParams } from "react-router-dom";
 import { FaGripLines } from "react-icons/fa";
+import CourseNavigation from "./CourseNavigation";
 
 function Courses() {
   const { courseId } = useParams();
@@ -20,6 +21,7 @@ function Courses() {
           </li>
         </ol>
       </nav>
+      <CourseNavigation/>
     </div>
   );
 }
