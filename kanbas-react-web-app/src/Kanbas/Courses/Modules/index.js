@@ -1,7 +1,11 @@
+import ButtonBar from "./ButtonBar";
 import ModuleList from "./ModuleList";
+import "../Modules/index.css";
 function Modules() {
   return (
-    <div>
+    <div class="moduleContainer">
+      <ButtonBar/>
+      <hr/>
       <ModuleList />
     </div>
   );

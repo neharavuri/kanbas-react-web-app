@@ -1,5 +1,17 @@
 .modules {
     background-color: rgb(244, 239, 239) !important;
     border-radius: 0 !important;
-    width: 90%;
+}
+
+.grey-button {
+    background-color: rgb(244, 239, 239) !important;
+    border-radius: 0 !important;
+}
+
+.square-button {
+    border-radius: 0 !important;
+}
+
+.moduleContainer{
+    width: 80%;
 }
