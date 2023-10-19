@@ -5,6 +5,7 @@ import MapFunction from "./MapFunction";
 import JsonStringify from "./JsonStringify";
 import FindFunction from "./FindFunction";
 import FilterFunction from "./FilterFunction";
+import FindIndex from "./FindIndex";
 function WorkingWithArrays() {
   var functionScoped = 2;
   let blockScoped = 5;
@@ -31,6 +32,7 @@ function WorkingWithArrays() {
         <MapFunction/>
         <JsonStringify/>
         <FindFunction/>
+        <FindIndex/>
         <FilterFunction/>
     </div>
   );

@@ -2,3 +2,7 @@
     background-color: rgb(244, 239, 239) !important;
     border-radius: 0 !important;
 }
+
+.react-button {
+    padding-right: 10px;
+}

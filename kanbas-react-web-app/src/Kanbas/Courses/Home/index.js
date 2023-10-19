@@ -16,56 +16,56 @@ function Home() {
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-            <FaFileImport/>
-            <p class="px-2">Import Existing Content</p>
+            <FaFileImport size = {30} className="react-button" />
+            Import Existing Content
           </button>
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-            <FaCloudUploadAlt/>
+            <FaCloudUploadAlt size = {30} className="react-button"/>
             Import From Commons
           </button>
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-            <FaBullseye/>
+            <FaBullseye size = {30} className="react-button"/>
             Choose Home Page
           </button>
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-           <FaChartBar/>View Course Stream
+           <FaChartBar size = {30} className="react-button"/>View Course Stream
           </button>
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-            <FaHornbill/>
+            <FaHornbill size = {30} className="react-button"/>
             New Announcement
           </button>
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-            <FaChartBar/>
+            <FaChartBar size = {30} className="react-button"/>
             New Analytics
           </button>
           <button
             type="button"
             class="my-1 btn grey-button"
-            style={{width:"100%"}}
+            style={{width:"110%"}}
           >
-            <FaBell/>
+            <FaBell size = {30} className="react-button"/>
             View Course Notifications
           </button>
           <br />
