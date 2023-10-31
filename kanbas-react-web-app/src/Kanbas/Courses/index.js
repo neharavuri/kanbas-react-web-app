@@ -12,11 +12,11 @@ import "./index.css";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 
-function Courses() {
+function Courses({ courses }) {
   const location = window.location.href.split("/");
   console.log(window);
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div class="container">
       <div className="row ">
