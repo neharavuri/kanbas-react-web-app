@@ -10,6 +10,7 @@ import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
 import ReduxExamples from "./ReduxExamples";
 import StringStateVariables from "./StringStateVariables";
+import DateStateVariable from "./DateStateVariable";
 function Assignment4() {
     function sayHello() {
         alert("Hello");
@@ -24,6 +25,7 @@ function Assignment4() {
       <EventObject/>
       <Counter/>
       <BooleanStateVariables/>
+      <DateStateVariable/>
       <StringStateVariables/>
       <ObjectStateVariable/>
       <ArrayStateVariable/>

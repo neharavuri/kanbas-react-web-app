@@ -48,7 +48,7 @@ function Dashboard({
       <h2>Published Courses ({courses.length})</h2>
       <div class="row">
         {courses.map((course, index) => (
-          <div className="col-sm">
+          <div className="col-sm-4">
             <div class="card">
               <img src="/blue.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
