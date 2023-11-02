@@ -11,6 +11,7 @@ import Home from "./Home";
 import "./index.css";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
+import AddAssignment from "./Assignments/AddAssignment";
 
 function Courses({ courses }) {
   const location = window.location.href.split("/");
@@ -49,6 +50,8 @@ function Courses({ courses }) {
               path="Assignments/:assignmentId"
               element={<AssignmentEditor/>}
             />
+            <Route path="Assignments/new"
+            element={<AddAssignment/>} />
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>

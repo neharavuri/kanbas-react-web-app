@@ -13,6 +13,7 @@ import "./index.css";
 function Assignments() {
   const { courseId } = useParams();
   const assignments = db.assignments;
+  console.log(db.assignments)
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
@@ -30,9 +31,14 @@ function Assignments() {
           <button type="button" class="float-end my-1 btn grey-button">
             <HiEllipsisVertical />
           </button>
-          <button type="button" class="float-end my-1 btn btn-danger">
+          <Link
+            to={`/Kanbas/Courses/${courseId}/Assignments/new`}
+            className="list-group-item assignment-list"
+          >
+            <button type="button" class="float-end my-1 btn btn-danger">
             +Assignment
           </button>
+          </Link>
           <button type="button" class="float-end my-1 btn grey-button">
             +Group
           </button>
@@ -47,7 +53,8 @@ function Assignments() {
           <HiEllipsisVertical size={25} className="float-end" />
           <AiOutlinePlus className="float-end" />
         </li>
-        {courseAssignments.map((assignment) => (
+{        console.log(courseAssignments)
+}        {courseAssignments.map((assignment) => (
           <Link
             key={assignment._id}
             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
