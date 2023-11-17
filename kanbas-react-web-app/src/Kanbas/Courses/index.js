@@ -12,12 +12,23 @@ import "./index.css";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import AddAssignment from "./Assignments/AddAssignment";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
+  const URL = "http://localhost:4000/api/courses";
   const location = window.location.href.split("/");
-  console.log(window);
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    console.log(response);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div class="container">
       <div className="row ">
@@ -45,13 +56,12 @@ function Courses({ courses }) {
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home />} />
             <Route path="Modules" element={<Modules />} />
-            <Route path="Assignments" element={<Assignments/>} />
+            <Route path="Assignments" element={<Assignments />} />
             <Route
               path="Assignments/:assignmentId"
-              element={<AssignmentEditor/>}
+              element={<AssignmentEditor />}
             />
-            <Route path="Assignments/new"
-            element={<AddAssignment/>} />
+            <Route path="Assignments/new" element={<AddAssignment />} />
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>

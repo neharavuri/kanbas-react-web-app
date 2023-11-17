@@ -12,8 +12,8 @@ import "./index.css";
 
 function Assignments() {
   const { courseId } = useParams();
+  const { newAssignments } = useParams();
   const assignments = db.assignments;
-  console.log(db.assignments)
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );

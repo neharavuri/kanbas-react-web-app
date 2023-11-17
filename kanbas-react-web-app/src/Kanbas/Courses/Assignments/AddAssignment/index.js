@@ -26,7 +26,7 @@ function AddAssignment() {
       <p>Assignment Name</p>
       <input
         onChange={(e) =>
-          dispatch(setAssignment({ ...assignment, name: e.target.value, course: courseId }))
+          dispatch(setAssignment({ ...assignment, name: e.target.value }))
         }
         class="form-control"
         value={assignment.name}
