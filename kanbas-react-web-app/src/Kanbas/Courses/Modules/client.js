@@ -1,6 +1,7 @@
 import axios from "axios";
-const COURSES_URL = "http://kanbas-node-server-app-f60d.onrender.com/api/courses";
-const MODULES_URL = "http://kanbas-node-server-app-f60d.onrender.com/api/modules";
+const API_BASE = process.env.REACT_APP_API_BASE;
+const COURSES_URL = `${API_BASE}/courses`;
+const MODULES_URL = `${API_BASE}/modules`;
 export const deleteModuleforCourse = async (moduleId) => {
   const response = await axios.delete(`${MODULES_URL}/${moduleId}`);
   return response.data;
