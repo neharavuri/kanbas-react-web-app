@@ -52,6 +52,7 @@ function EncodingParametersInURLs() {
         href={`${API_BASE}/a5/add/${a}/${b}`}
         className="btn btn-primary"
       >
+        {`${API_BASE}/a5/add/${a}/${b}`}
         Add {a} + {b}
       </a>
       <a
