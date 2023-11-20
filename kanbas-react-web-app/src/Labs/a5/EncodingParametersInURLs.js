@@ -52,7 +52,6 @@ function EncodingParametersInURLs() {
         href={`${API_BASE}/a5/add/${a}/${b}`}
         className="btn btn-primary"
       >
-        {`${API_BASE}/a5/add/${a}/${b}`}
         Add {a} + {b}
       </a>
       <a
@@ -70,7 +69,7 @@ function EncodingParametersInURLs() {
         Add {a} + {b}
       </a>
       <a
-        href={`${API_BASE}/courses/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+        href={`${API_BASE}/a5/calculator?operation=subtract&a=${a}&b=${b}`}
         className="btn btn-danger"
       >
         Substract {a} - {b}
