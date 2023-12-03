@@ -8,9 +8,10 @@ import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
 import { useEffect } from "react";
+import Signin from "./Users/signin";
 
 function Kanbas() {
-  const API_BASE = process.env.REACT_APP_API_BASE;
+  const API_BASE = "http://localhost:4000";
   const [courses, setCourses] = useState([]);
   const URL = `${API_BASE}/api/courses`;
   const findAllCourses = async () => {
@@ -63,6 +64,7 @@ function Kanbas() {
           <div class="col-10">
             <Routes>
               <Route path="/" element={<Navigate to="Dashboard" />} />
+              <Route path="Sign In" element={<Signin />} />
               <Route path="Account" element={<h1>Account</h1>} />
               <Route
                 path="Dashboard"
