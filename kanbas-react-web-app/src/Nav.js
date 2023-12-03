@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 function Nav() {
+  //comment
   const { pathname } = useLocation();
   return (
     <nav className="nav nav-tabs mt-2">
