@@ -39,6 +39,16 @@ function Account() {
       <h1>Account</h1>
       {account && (
         <div className="list-group">
+          <p>Username</p>
+          <input
+            className="list-group-item"
+            value={account.username}
+            onChange={(e) =>
+              setAccount({ ...account, username: e.target.value })
+            }
+          />{" "}
+          <br />
+          <p>Password</p>
           <input
             className="list-group-item"
             value={account.password}
@@ -47,6 +57,7 @@ function Account() {
             }
           />{" "}
           <br />
+          <p>First Name</p>
           <input
             className="list-group-item"
             value={account.firstName}
@@ -55,6 +66,7 @@ function Account() {
             }
           />
           <br />
+          <p>Last Name</p>
           <input
             className="list-group-item"
             value={account.lastName}
@@ -63,6 +75,7 @@ function Account() {
             }
           />
           <br />
+          <p> DOB </p>
           <input
             className="list-group-item"
             type="date"
@@ -70,12 +83,14 @@ function Account() {
             onChange={(e) => setAccount({ ...account, dob: e.target.value })}
           />
           <br />
+          <p>Email</p>
           <input
             className="list-group-item"
             value={account.email}
             onChange={(e) => setAccount({ ...account, email: e.target.value })}
           />
           <br />
+          <p>Role</p>
           <select
             className="list-group-item"
             onChange={(e) => setAccount({ ...account, role: e.target.value })}

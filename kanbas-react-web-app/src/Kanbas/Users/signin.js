@@ -17,7 +17,8 @@ function Signin() {
       <p>Password</p>
       <input value={credentials.password} onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
       <br/>
-      <button className="btn-success" onClick={signin}> Signin </button>
+      <br/>
+      <button className="btn btn-success" onClick={signin}> Signin </button>
     </div>
   );
 }
